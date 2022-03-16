@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2bd73d85078e38acea8fc101f5a05a6",
+    "content-hash": "7d45207667ddb8149a4dfb7a5dadaa6e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1000,6 +1000,59 @@
                 "source": "https://github.com/hyperf/hyperf"
             },
             "time": "2021-07-18T06:50:14+00:00"
+        },
+        {
+            "name": "hyperf/consul",
+            "version": "v2.2.26",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/consul.git",
+                "reference": "d5782d9491e90d5914e003705a85a412879d055b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/consul/zipball/d5782d9491e90d5914e003705a85a412879d055b",
+                "reference": "d5782d9491e90d5914e003705a85a412879d055b",
+                "shasum": ""
+            },
+            "require": {
+                "hyperf/guzzle": "~2.2.0",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\Consul\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\Consul\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Consul Client for Hyperf.",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "consul",
+                "consul-client",
+                "hyperf",
+                "php",
+                "swoole"
+            ],
+            "support": {
+                "docs": "https://hyperf.wiki",
+                "issues": "https://github.com/hyperf/hyperf/issues",
+                "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                "source": "https://github.com/hyperf/hyperf"
+            },
+            "time": "2022-02-11T09:45:53+00:00"
         },
         {
             "name": "hyperf/context",
@@ -2619,6 +2672,121 @@
                 "source": "https://github.com/hyperf/hyperf"
             },
             "time": "2021-12-13T08:49:35+00:00"
+        },
+        {
+            "name": "hyperf/service-governance",
+            "version": "v2.2.28",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/service-governance.git",
+                "reference": "2bcb43f284a9d08fb4b46fbf787ce3950aad84b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/service-governance/zipball/2bcb43f284a9d08fb4b46fbf787ce3950aad84b8",
+                "reference": "2bcb43f284a9d08fb4b46fbf787ce3950aad84b8",
+                "shasum": ""
+            },
+            "require": {
+                "hyperf/consul": "~2.2.0",
+                "hyperf/contract": "~2.2.0",
+                "php": ">=7.2"
+            },
+            "suggest": {
+                "hyperf/event": "Required to use RegisterServiceListener.",
+                "hyperf/framework": "Required to use RegisterServiceListener.",
+                "hyperf/service-governance-consul": "Required to use consul adapter.",
+                "hyperf/service-governance-nacos": "Required to use nacos adapter."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\ServiceGovernance\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\ServiceGovernance\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A service governance component for Hyperf.",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "hyperf",
+                "php",
+                "service-governance",
+                "swoole"
+            ],
+            "support": {
+                "docs": "https://hyperf.wiki",
+                "issues": "https://github.com/hyperf/hyperf/issues",
+                "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                "source": "https://github.com/hyperf/hyperf"
+            },
+            "time": "2022-03-10T06:57:52+00:00"
+        },
+        {
+            "name": "hyperf/service-governance-consul",
+            "version": "v2.2.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/service-governance-consul.git",
+                "reference": "49800f559aa8a0b1a97a3fe7b30697ed533c1d70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/service-governance-consul/zipball/49800f559aa8a0b1a97a3fe7b30697ed533c1d70",
+                "reference": "49800f559aa8a0b1a97a3fe7b30697ed533c1d70",
+                "shasum": ""
+            },
+            "require": {
+                "hyperf/consul": "~2.2.0",
+                "hyperf/contract": "~2.2.0",
+                "hyperf/service-governance": "~2.2.0",
+                "hyperf/utils": "~2.2.0",
+                "php": ">=7.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\ServiceGovernanceConsul\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\ServiceGovernanceConsul\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A consul adapter for service governance.",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "consul-adapter",
+                "hyperf",
+                "php",
+                "service-governance",
+                "swoole"
+            ],
+            "support": {
+                "docs": "https://hyperf.wiki",
+                "issues": "https://github.com/hyperf/hyperf/issues",
+                "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                "source": "https://github.com/hyperf/hyperf"
+            },
+            "time": "2021-10-26T09:05:36+00:00"
         },
         {
             "name": "hyperf/utils",
